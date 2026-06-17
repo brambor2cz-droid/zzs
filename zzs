@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZZS ČR | Roleplay Frakce</title>
+
+<style>
+:root{
+    --blue:#0057B8;
+    --green:#009B77;
+    --dark:#0f172a;
+    --light:#f8fafc;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:var(--light);
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,var(--blue),var(--green));
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+header h1{
+    font-size:4rem;
+}
+
+header p{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 30px;
+    background:white;
+    color:var(--blue);
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav a{
+    display:block;
+    padding:20px;
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:var(--blue);
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--blue);
+    font-size:2.5rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:var(--blue);
+    margin-bottom:15px;
+}
+
+.stats{
+    background:var(--dark);
+    color:white;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.stat h3{
+    font-size:3rem;
+    color:#4ade80;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🚑 ZZS ČR</h1>
+    <p>Česká zdravotnická záchranná služba • Roleplay Frakce</p>
+
+    <a href="#nabor" class="btn">Přidat se k ZZS</a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#onas">O nás</a></li>
+        <li><a href="#sluzby">Služby</a></li>
+        <li><a href="#statistiky">Statistiky</a></li>
+        <li><a href="#nabor">Nábor</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+</nav>
+
+<section id="onas">
+<div class="container">
+
+<div class="section-title">
+<h2>O Frakci</h2>
+</div>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+Jsme profesionální RP složka České zdravotnické záchranné služby.
+Naším cílem je poskytovat realistický zdravotnický roleplay,
+rychlé zásahy a kvalitní spolupráci s ostatními složkami IZS.
+</p>
+
+</div>
+</section>
+
+<section id="sluzby">
+<div class="container">
+
+<div class="section-title">
+<h2>Naše činnost</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>🚑 Výjezdy</h3>
+<p>Dopravní nehody, zranění a mimořádné události.</p>
+</div>
+
+<div class="card">
+<h3>🏥 Nemocnice</h3>
+<p>Ošetření pacientů a následná péče.</p>
+</div>
+
+<div class="card">
+<h3>🚁 LZS</h3>
+<p>Letecká záchranná služba pro kritické případy.</p>
+</div>
+
+<div class="card">
+<h3>🩺 Školení</h3>
+<p>Výcvik nových zdravotníků a spolupráce s IZS.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="stats" id="statistiky">
+<div class="container">
+
+<div class="section-title">
+<h2>Statistiky Frakce</h2>
+</div>
+
+<div class="stats-grid">
+
+<div class="stat">
+<h3 id="vyjezdy">0</h3>
+<p>Výjezdů</p>
+</div>
+
+<div class="stat">
+<h3 id="clenove">0</h3>
+<p>Členů</p>
+</div>
+
+<div class="stat">
+<h3 id="zachrany">0</h3>
+<p>Zachráněných osob</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="nabor">
+<div class="container">
+
+<div class="section-title">
+<h2>Nábor Otevřen</h2>
+</div>
+
+<p style="text-align:center;">
+Hledáme aktivní a zodpovědné hráče do řad ZZS.
+</p>
+
+<div style="text-align:center;">
+<a href="https://discord.gg/tvujdiscord" class="btn">
+Vyplnit přihlášku
+</a>
+</div>
+
+</div>
+</section>
+
+<section id="kontakt">
+<div class="container contact">
+
+<div class="section-title">
+<h2>Kontakt</h2>
+</div>
+
+<p><strong>Discord:</strong> discord.gg/tvujdiscord</p>
+<p><strong>Tísňová linka:</strong> 155</p>
+<p><strong>Vedoucí ZZS:</strong> Doplň jméno</p>
+
+</div>
+</section>
+
+<footer>
+    © 2026 ZZS ČR Roleplay Frakce
+</footer>
+
+<script>
+// Animované statistiky
+function animate(id, target){
+    let count = 0;
+    let speed = target / 100;
+
+    const interval = setInterval(() => {
+        count += speed;
+
+        if(count >= target){
+            count = target;
+            clearInterval(interval);
+        }
+
+        document.getElementById(id).innerText =
+            Math.floor(count);
+    },20);
+}
+
+window.onload = () => {
+    animate("vyjezdy", 1542);
+    animate("clenove", 37);
+    animate("zachrany", 1288);
+};
+</script>
+
+</body>
+</html>
